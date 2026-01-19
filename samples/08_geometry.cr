@@ -3,7 +3,7 @@ require "../src/sdl"
 SDL.init(SDL::Init::VIDEO)
 at_exit { SDL.quit }
 
-window = SDL::Window.new("SDL tutorial", 640, 480)
+window = SDL::Window.new("SDL Geometry", 640, 480)
 renderer = SDL::Renderer.new(window)
 
 width, height = window.size
@@ -13,9 +13,8 @@ loop do
   when SDL::Event::Quit
     break
   end
-
   # clear screen in white
-  renderer.draw_color = SDL::Color[0, 0, 128, 255]
+  renderer.draw_color = RED
   renderer.clear
 
   # centered red rectangle

@@ -3,7 +3,7 @@ require "../src/image"
 
 SDL.init(SDL::Init::VIDEO)
 at_exit { SDL.quit }
-window = SDL::Window.new("SDL Tutorial", 640, 640)
+window = SDL::Window.new("SDL Image", 640, 640)
 
 SDL::IMG.init(SDL::IMG::Init::PNG)
 at_exit { SDL::IMG.quit }

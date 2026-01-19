@@ -7,7 +7,7 @@ SDL::IMG.init(SDL::IMG::Init::PNG); at_exit { SDL::IMG.quit }
 window = SDL::Window.new("SDL tutorial", 640, 480)
 renderer = SDL::Renderer.new(window, SDL::Renderer::Flags::ACCELERATED | SDL::Renderer::Flags::PRESENTVSYNC)
 
-arrow = SDL::IMG.load(File.join(__DIR__, "data", "arrow.png"), renderer)
+arrow = SDL::IMG.load(File.join(__DIR__, "data", "sample.png"), renderer)
 degrees = 0
 flip = SDL::Renderer::Flip::NONE
 
