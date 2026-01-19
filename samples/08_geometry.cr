@@ -15,7 +15,7 @@ loop do
   end
 
   # clear screen in white
-  renderer.draw_color = SDL::Color[255, 255, 255, 255]
+  renderer.draw_color = SDL::Color[0, 0, 128, 255]
   renderer.clear
 
   # centered red rectangle
