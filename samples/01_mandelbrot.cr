@@ -24,7 +24,7 @@ class MandelbrotExplorer
   
   def initialize
     puts "=== Crystal SDL2 Mandelbrot Explorer ==="
-    puts "Using your sdl_bindings_complete.cr"
+    puts "Using sdl.cr"
     puts "Controls:"
     puts "  Arrow keys: Move"
     puts "  Numpad + Zoom in, - Zoom out"
