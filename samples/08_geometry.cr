@@ -7,14 +7,14 @@ window = SDL::Window.new("SDL Geometry", 640, 480)
 renderer = SDL::Renderer.new(window)
 
 width, height = window.size
-
+DARKBLUE = SDL::Color[0,0,127,255]
 loop do
   case event = SDL::Event.wait
   when SDL::Event::Quit
     break
   end
   # clear screen in white
-  renderer.draw_color = RED
+  renderer.draw_color = DARKBLUE
   renderer.clear
 
   # centered red rectangle
